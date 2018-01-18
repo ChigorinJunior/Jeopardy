@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="@dimen/dimen_xsmall"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="@dimen/dimen_xsmall"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_xsmall"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="@dimen/dimen_xsmall"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/tenPlus"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/dimen_xsmall"
+        android:layout_marginEnd="@dimen/dimen_xsmall"
+        android:layout_marginStart="@dimen/dimen_xsmall"
+        android:layout_marginTop="@dimen/dimen_small"
+        android:text="+10"
+        android:background="@color/green_500"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/tenMinus"
+        app:layout_constraintEnd_toStartOf="@+id/twentyPlus"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/avatar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/twentyPlus"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/dimen_xsmall"
+        android:layout_marginEnd="@dimen/dimen_xsmall"
+        android:layout_marginStart="@dimen/dimen_xsmall"
+        android:layout_marginTop="@dimen/dimen_small"
+        android:text="+20"
+        android:background="@color/green_600"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/twentyMinus"
+        app:layout_constraintEnd_toStartOf="@+id/thirtyPlus"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tenPlus"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/thirtyPlus"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/dimen_xsmall"
+        android:layout_marginEnd="@dimen/dimen_xsmall"
+        android:layout_marginStart="@dimen/dimen_xsmall"
+        android:layout_marginTop="@dimen/dimen_small"
+        android:text="+30"
+        android:background="@color/green_700"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/thirtyMinus"
+        app:layout_constraintEnd_toStartOf="@+id/fortyPlus"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/twentyPlus"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/fortyPlus"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/dimen_xsmall"
+        android:layout_marginEnd="@dimen/dimen_xsmall"
+        android:layout_marginStart="@dimen/dimen_xsmall"
+        android:layout_marginTop="@dimen/dimen_small"
+        android:text="+40"
+        android:background="@color/green_800"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/fortyMinus"
+        app:layout_constraintEnd_toStartOf="@+id/fiftyPlus"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/thirtyPlus"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/fiftyPlus"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/dimen_xsmall"
+        android:layout_marginEnd="@dimen/dimen_xsmall"
+        android:layout_marginStart="@dimen/dimen_xsmall"
+        android:layout_marginTop="@dimen/dimen_small"
+        android:text="+50"
+        android:background="@color/green_900"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/fiftyMinus"
+        app:layout_constraintEnd_toStartOf="@+id/score"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/fortyPlus"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/tenMinus"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/dimen_small"
+        android:layout_marginEnd="@dimen/dimen_xsmall"
+        android:layout_marginStart="@dimen/dimen_xsmall"
+        android:layout_marginBottom="@dimen/dimen_xsmall"
+        android:text="-10"
+        android:background="@color/red_500"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/twentyMinus"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/avatar"
+        app:layout_constraintTop_toBottomOf="@+id/tenPlus" />
+
+    <Button
+        android:id="@+id/twentyMinus"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/dimen_xsmall"
+        android:layout_marginEnd="@dimen/dimen_xsmall"
+        android:layout_marginStart="@dimen/dimen_xsmall"
+        android:layout_marginTop="@dimen/dimen_xsmall"
+        android:text="-20"
+        android:background="@color/red_600"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/thirtyMinus"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tenMinus"
+        app:layout_constraintTop_toBottomOf="@+id/twentyPlus" />
+
+    <Button
+        android:id="@+id/thirtyMinus"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/dimen_xsmall"
+        android:layout_marginEnd="@dimen/dimen_xsmall"
+        android:layout_marginStart="@dimen/dimen_xsmall"
+        android:layout_marginTop="@dimen/dimen_xsmall"
+        android:text="-30"
+        android:background="@color/red_700"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/fortyMinus"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/twentyMinus"
+        app:layout_constraintTop_toBottomOf="@+id/thirtyPlus" />
+
+    <Button
+        android:id="@+id/fortyMinus"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/dimen_xsmall"
+        android:layout_marginEnd="@dimen/dimen_xsmall"
+        android:layout_marginStart="@dimen/dimen_xsmall"
+        android:layout_marginTop="@dimen/dimen_xsmall"
+        android:text="-40"
+        android:background="@color/red_800"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/fiftyMinus"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/thirtyMinus"
+        app:layout_constraintTop_toBottomOf="@+id/fortyPlus" />
+
+    <Button
+        android:id="@+id/fiftyMinus"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/dimen_xsmall"
+        android:layout_marginEnd="@dimen/dimen_xsmall"
+        android:layout_marginStart="@dimen/dimen_xsmall"
+        android:layout_marginTop="@dimen/dimen_xsmall"
+        android:text="-50"
+        android:background="@color/red_900"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/score"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/fortyMinus"
+        app:layout_constraintTop_toBottomOf="@+id/fiftyPlus" />
+
+</android.support.constraint.ConstraintLayout>
